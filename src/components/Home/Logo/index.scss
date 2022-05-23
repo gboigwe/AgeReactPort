@@ -1,0 +1,92 @@
+.logo-container {
+  z-index: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  opacity: 0;
+
+  svg {
+    width: 50rem;
+    height: auto;
+    top: 5%;
+    bottom: 0;
+    transform: rotateZ(180deg) !important;
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    bottom: auto;
+    left: 0;
+    margin-right: -200px;
+    width: 45rem;
+    opacity: 0;
+    // transform: rotateZ(30deg);
+    z-index: 1;
+  }
+}
+
+.svg-container {
+  stroke: orange;
+  stroke-width: 10px;
+  margin-top: 900px;
+  margin-left: -200px;
+  margin-bottom: -100px;
+}
+
+/* ======================= MEDIA QUERY ======================= */
+@media screen and (max-width: 1024px) {
+  .logo-container {
+    z-index: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    opacity: 0;
+  
+    svg {
+      width: 25rem;
+      height: auto;
+      transform: rotateZ(180deg) !important;
+    }
+  
+    .solid-logo {
+      position: absolute;
+      transform: rotateZ(0deg);
+      z-index: 1;
+      width: 22rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+    z-index: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    right: 1%;
+    opacity: 0;
+  
+    svg {
+      width: 16rem;
+      height: auto;
+      transform: rotateZ(180deg) !important;
+    }
+  
+    .solid-logo {
+      position: absolute;
+      transform: rotateZ(0deg);
+      z-index: 1;
+      width: 14rem;
+    }
+  }
+}
